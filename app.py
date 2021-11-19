@@ -20,10 +20,10 @@ import requests
 
 pickup_datetime = st.text_input('', '2012-10-06 12:10:20', placeholder='Pickup Datetime')
 
-pickup_lat = st.number_input('Pickup Latitude', 40.71)
-pickup_lon = st.number_input('Pickup Longitude', -74)
-dropoff_lat = st.number_input('Dropoff Latitude', 40.71)
-dropoff_lon = st.number_input('Dropoff Longitude', -74)
+pickup_lat = st.number_input('Pickup Latitude', value=40.71)
+pickup_lon = st.number_input('Pickup Longitude', value=-74)
+dropoff_lat = st.number_input('Dropoff Latitude', value=40.71)
+dropoff_lon = st.number_input('Dropoff Longitude', value=-74)
 
 pass_count = st.selectbox(
      'Number of Passengers',
